@@ -2,9 +2,10 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: example
+  labels:
+    serverType: front
 spec:
   containers:
     - name: nginx
       image: "nginx"
       imagePullPolicy: IfNotPresent
-
